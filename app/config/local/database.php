@@ -1,5 +1,5 @@
 <?php
-
+'connections' => array(
 	'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
@@ -9,4 +9,5 @@
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
-)
+    ),
+ );
