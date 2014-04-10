@@ -8,5 +8,6 @@
     
     </div>
     {{ Form::submit('Create') }}
+ 
   
   {{ Form::close() }}

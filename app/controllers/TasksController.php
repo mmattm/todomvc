@@ -18,10 +18,15 @@ class TasksController extends BaseController {
 	{
     return View::make('tasks.create');
 	}
+  public function index()
+	{
+    $tasks = Task::all();
+    return View::make('tasks.index')->with('mytasks', $tasks);
+	}
   public function store()
 	{
      Task::create(Input::all());
-     return Redirect::route('tasks_create');
+     return Redirect::route('tasks_index');
 	}
 
 }
